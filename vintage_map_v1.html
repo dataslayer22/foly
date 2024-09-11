@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_726f85ec01c24114ff927cc738a94732 {
+                    position: relative;
+                    width: 1200.0px;
+                    height: 700.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<style>
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #eed7c5;
+    color: #333;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+    text-wrap: pretty;
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: bold;
+}
+.leaflet-container a {
+    color: #832232;
+}
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+    background-color: #eed7c5;
+}
+
+.leaflet-popup-content {
+    font-size: 1.3rem;
+    }
+</style>
+    
+            <div class="folium-map" id="map_726f85ec01c24114ff927cc738a94732" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_726f85ec01c24114ff927cc738a94732 = L.map(
+                "map_726f85ec01c24114ff927cc738a94732",
+                {
+                    center: [46.8, 8.2],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eae4a550a268e1c53894e390d9586d49 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_eae4a550a268e1c53894e390d9586d49.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            var feature_group_035d0424b3a5992dbcaba93e374fdce9 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_725178853b8b10cc2ec1cbde284adf0b = L.marker(
+                [51.46, -0.012],
+                {}
+            ).addTo(feature_group_035d0424b3a5992dbcaba93e374fdce9);
+        
+    
+            var icon_802599441edb0e1a4e4c2e6b9ffdb974 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bag-shopping", "iconColor": "#fac9b8", "markerColor": "darkpurple", "prefix": "fa"}
+            );
+            marker_725178853b8b10cc2ec1cbde284adf0b.setIcon(icon_802599441edb0e1a4e4c2e6b9ffdb974);
+        
+    
+        var popup_8e8deb821192bf82afd52bdb620a22f4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7f309bbbe37184816bf51c232edd6a46 = $(`<div id="html_7f309bbbe37184816bf51c232edd6a46" style="width: 100.0%; height: 100.0%;"><p>🧑‍🌾Market Name:</b> Portobello Market</p><p>🗓️Opening Times:</b> Fri and Sat, 9AM - 7PM</p><p>🧺Description:</b> selling all manner of vintage collectors' items, from old toys to antique cameras and second-hand books</p><p><a href="Portobello Market | Opening Times & Information (portobelloroad.co.uk)" target="_blank">🌎Market Website</a></p></div>`)[0];
+                popup_8e8deb821192bf82afd52bdb620a22f4.setContent(html_7f309bbbe37184816bf51c232edd6a46);
+            
+        
+
+        marker_725178853b8b10cc2ec1cbde284adf0b.bindPopup(popup_8e8deb821192bf82afd52bdb620a22f4)
+        ;
+
+        
+    
+    
+            feature_group_035d0424b3a5992dbcaba93e374fdce9.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            var feature_group_0d479eff92ca2284d1d941a91c5d33b9 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_0757ce9894d54e8173e02e0b6f353fed = L.marker(
+                [48.51, 2.21],
+                {}
+            ).addTo(feature_group_0d479eff92ca2284d1d941a91c5d33b9);
+        
+    
+            var icon_23c2d524c7da732f4fd5bc6246991653 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bag-shopping", "iconColor": "#fac9b8", "markerColor": "darkpurple", "prefix": "fa"}
+            );
+            marker_0757ce9894d54e8173e02e0b6f353fed.setIcon(icon_23c2d524c7da732f4fd5bc6246991653);
+        
+    
+        var popup_1a92ea30f3a6de3ac12ceb0542ba97a3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4815e685dea9a94fa4f760412609e533 = $(`<div id="html_4815e685dea9a94fa4f760412609e533" style="width: 100.0%; height: 100.0%;"><p>🧑‍🌾Market Name:</b> Puces de la Grange Rouge</p><p>🗓️Opening Times:</b> 1st Sunday in July, August, and September: 5AM- 5PM</p><p>🧺Description:</b> Antique furniture, antique farm equipment and gardening tools, antique dishes, glassware, vintage toys, comic books, collectibles, some just plain fun, used books, vintage clothing, lamps, ornaments of all shapes and sizes and much more.</p><p><a href="LA GRANGE ROUGE - Centre Rural de Développement Culturel et Économique" target="_blank">🌎Market Website</a></p></div>`)[0];
+                popup_1a92ea30f3a6de3ac12ceb0542ba97a3.setContent(html_4815e685dea9a94fa4f760412609e533);
+            
+        
+
+        marker_0757ce9894d54e8173e02e0b6f353fed.bindPopup(popup_1a92ea30f3a6de3ac12ceb0542ba97a3)
+        ;
+
+        
+    
+    
+            feature_group_0d479eff92ca2284d1d941a91c5d33b9.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            var feature_group_714cf1732838692de0cab7f90b013bb4 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_449ee7b6ee3e706a07d56b2abec2845c = L.marker(
+                [45.16, 9.31],
+                {}
+            ).addTo(feature_group_714cf1732838692de0cab7f90b013bb4);
+        
+    
+            var icon_3d5922603d8dbf74cc1e8be30a2f4a12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bag-shopping", "iconColor": "#fac9b8", "markerColor": "darkpurple", "prefix": "fa"}
+            );
+            marker_449ee7b6ee3e706a07d56b2abec2845c.setIcon(icon_3d5922603d8dbf74cc1e8be30a2f4a12);
+        
+    
+        var popup_b24eb0e82b6b125581073366404a4ba7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cc15da13e0761bdfb2d9870239e43043 = $(`<div id="html_cc15da13e0761bdfb2d9870239e43043" style="width: 100.0%; height: 100.0%;"><p>🧑‍🌾Market Name:</b> The Next Vintage</p><p>🗓️Opening Times:</b> 3rd weekend in April and Oct, Fri - Mon: 10AM - 8PM</p><p>🧺Description:</b> vintage fashion</p><p><a href="https://www.belgioioso.it/vintage/next-vintage-moda-accessori-depoca-al-castello-belgioioso/en/" target="_blank">🌎Market Website</a></p></div>`)[0];
+                popup_b24eb0e82b6b125581073366404a4ba7.setContent(html_cc15da13e0761bdfb2d9870239e43043);
+            
+        
+
+        marker_449ee7b6ee3e706a07d56b2abec2845c.bindPopup(popup_b24eb0e82b6b125581073366404a4ba7)
+        ;
+
+        
+    
+    
+            feature_group_714cf1732838692de0cab7f90b013bb4.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            var feature_group_fe0c0f6bfddb62b846bcd8cacf77b2fd = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_00a15d0018eef9ba180a88e1ccaf4838 = L.marker(
+                [48.12, 11.58],
+                {}
+            ).addTo(feature_group_fe0c0f6bfddb62b846bcd8cacf77b2fd);
+        
+    
+            var icon_f72fde4af157cda90cc2bdefe0bd46bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bag-shopping", "iconColor": "#fac9b8", "markerColor": "darkpurple", "prefix": "fa"}
+            );
+            marker_00a15d0018eef9ba180a88e1ccaf4838.setIcon(icon_f72fde4af157cda90cc2bdefe0bd46bc);
+        
+    
+        var popup_03df7fc9500a3322c775e418f6660532 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_00da6644d1c361d675405e35246e8e50 = $(`<div id="html_00da6644d1c361d675405e35246e8e50" style="width: 100.0%; height: 100.0%;"><p>🧑‍🌾Market Name:</b> Auer Dult</p><p>🗓️Opening Times:</b> 3 times a year on the last Saturday in April & July, and the 3rd Saturday in October (9-days fair): 10AM - 8PM</p><p>🧺Description:</b> large antique market  </p><p><a href="https://www.muenchen.de/int/en/shopping/markets/auer-dult.html" target="_blank">🌎Market Website</a></p></div>`)[0];
+                popup_03df7fc9500a3322c775e418f6660532.setContent(html_00da6644d1c361d675405e35246e8e50);
+            
+        
+
+        marker_00a15d0018eef9ba180a88e1ccaf4838.bindPopup(popup_03df7fc9500a3322c775e418f6660532)
+        ;
+
+        
+    
+    
+            feature_group_fe0c0f6bfddb62b846bcd8cacf77b2fd.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            var feature_group_7a5145617d2ccfa2dbe5047da0f35d78 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_60e0be9ee6cd2428849aa4298529760e = L.marker(
+                [52.46, 5.04],
+                {}
+            ).addTo(feature_group_7a5145617d2ccfa2dbe5047da0f35d78);
+        
+    
+            var icon_dc2343d01a74938da3845f54090778fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bag-shopping", "iconColor": "#fac9b8", "markerColor": "darkpurple", "prefix": "fa"}
+            );
+            marker_60e0be9ee6cd2428849aa4298529760e.setIcon(icon_dc2343d01a74938da3845f54090778fb);
+        
+    
+        var popup_2ec0dc9837b615daa52e6b8190aa0a4a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f09adae0925b62148314b7a2de9057d7 = $(`<div id="html_f09adae0925b62148314b7a2de9057d7" style="width: 100.0%; height: 100.0%;"><p>🧑‍🌾Market Name:</b> Waterlooplein Flower Market</p><p>🗓️Opening Times:</b> Mon -Sat: 9:30AM - 6PM</p><p>🧺Description:</b> Vintage and old clothes, old books and records, random art, bikes, kids' toy, coins and stamps</p><p><a href="https://waterlooplein.amsterdam/en/" target="_blank">🌎Market Website</a></p></div>`)[0];
+                popup_2ec0dc9837b615daa52e6b8190aa0a4a.setContent(html_f09adae0925b62148314b7a2de9057d7);
+            
+        
+
+        marker_60e0be9ee6cd2428849aa4298529760e.bindPopup(popup_2ec0dc9837b615daa52e6b8190aa0a4a)
+        ;
+
+        
+    
+    
+            feature_group_7a5145617d2ccfa2dbe5047da0f35d78.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            var layer_control_9de4194066f7cd30c525020e7861a28f_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_eae4a550a268e1c53894e390d9586d49,
+                },
+                overlays :  {
+                    "Portobello Market" : feature_group_035d0424b3a5992dbcaba93e374fdce9,
+                    "Puces de la Grange Rouge" : feature_group_0d479eff92ca2284d1d941a91c5d33b9,
+                    "The Next Vintage" : feature_group_714cf1732838692de0cab7f90b013bb4,
+                    "Auer Dult" : feature_group_fe0c0f6bfddb62b846bcd8cacf77b2fd,
+                    "Waterlooplein Flower Market" : feature_group_7a5145617d2ccfa2dbe5047da0f35d78,
+                },
+            };
+                layer_control_9de4194066f7cd30c525020e7861a28f = L.control.layers(
+                layer_control_9de4194066f7cd30c525020e7861a28f_layers.base_layers,
+                layer_control_9de4194066f7cd30c525020e7861a28f_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_726f85ec01c24114ff927cc738a94732);
+
+        
+    
+            tile_layer_eae4a550a268e1c53894e390d9586d49.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            feature_group_035d0424b3a5992dbcaba93e374fdce9.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            feature_group_0d479eff92ca2284d1d941a91c5d33b9.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            feature_group_714cf1732838692de0cab7f90b013bb4.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            feature_group_fe0c0f6bfddb62b846bcd8cacf77b2fd.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+    
+            feature_group_7a5145617d2ccfa2dbe5047da0f35d78.addTo(map_726f85ec01c24114ff927cc738a94732);
+        
+</script>
+</html>
